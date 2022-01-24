@@ -1,0 +1,22 @@
+<view class="nav-bar" style="height: {{ navBarHeight }}px;background-color: {{backgroundColor}}">
+  <view class="nav-bar-content" style="padding-top: {{statusBarHeight}}px" wx:if="{{show}}">
+    <view class="nav-bar-left">
+      <view wx:if="{{navigateBack}}" class="nav-bar-back" bindtap="back">
+        <image wx:if="{{isBackIcon}}" src='../../assets/icons/back_icon.svg' mode='aspectFit'></image>
+        <image wx:else src='../../assets/icons/back_home_icon.svg' mode='aspectFit'></image>
+      </view>
+      <slot name="left"></slot>
+    </view>
+    <view class="nav-bar-center">
+      <view wx:if="{{useTitle}}" class='nav-bar-center_ellipsis'>
+        <slot name="center"></slot>
+      </view>
+      <view wx:else class='nav-bar-center_ellipsis'>
+        <image class="nav-bar-center_logo" src='../../assets/common/logo.png' mode='aspectFit'></image>
+      </view>
+    </view>
+    <view class="nav-bar-right">
+      <slot name="right"></slot>
+    </view>
+  </view>
+</view>

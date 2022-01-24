@@ -1,0 +1,13 @@
+<scroll-view class="new-scroll-view" data-nav-height="{{navBarHeight}}" scroll-y 
+  enable-back-to-top scroll-top="{{scrollTop}}" scroll-with-animation bindscroll="onScroll" bindscrolltolower="bindscrolltolower" bindtouchmove='bindtouchmove'
+  style="height: calc(100vh - {{navBarHeight}}rpx  {{checkIpx && isIpx ? '- 96rpx' : ''}});margin-top: calc({{navBarHeight}}px {{marginTop ? '+ '+marginTop+'rpx' : ''}})">
+  <slot></slot>
+  <view wx:if="{{checkIpx && isIpx}}" class="fix-iphonex-bottom"></view>
+</scroll-view>
+
+<!-- <scroll-view class="new-scroll-view" data-nav-height="{{navBarHeight}}" scroll-y 
+  enable-back-to-top scroll-top="{{scrollTop}}" scroll-with-animation bindscroll="onScroll" bindscrolltolower="bindscrolltolower" bindtouchmove='bindtouchmove'
+  style="height: calc(100vh - {{navBarHeight}}rpx  {{checkIpx && isIpx ? '- 58rpx' : ''}});">
+  <slot></slot>
+  <view wx:if="{{checkIpx && isIpx}}" class="fix-iphonex-bottom"></view>
+</scroll-view> -->
