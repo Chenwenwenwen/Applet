@@ -10,6 +10,21 @@
 			<image src="./img/useImage.jpg"/>
 		</view>
 		<view class="userName">name</view>
+		<view class="message-item">期望职位 : <text style="color:#BF7E00">前端开发</text></view>
+		<view class="message-item">全职 月内到岗 一年半经验</view>
+		<!-- 联系方式 -->
+		<view class="contact">
+			<view class="contact-item" >
+				<text>在线联系</text>
+				<button type="primary" open-type="contact" class="KFBtu" />
+			</view>
+			<view class="contact-item" bindtap="callPhone">拨打电话</view>
+			<view class="contact-item" data-content='{{email}}' bindtap="copyBtn">复制邮箱</view>
+		</view>
+	</view>
+	<!-- 教育经历 -->
+	<view class="index-block">
+		<view class="userName">教育经历</view>
 	</view>
 </view>
 </ui-scroll-view>

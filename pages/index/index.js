@@ -13,6 +13,32 @@ Page({
     isIpx: app.globalData.isIpx,
     navBarHeight: app.globalData.navBarHeight,
     sysInfo: app.globalData.sysInfo,
+
+    //个人信息
+    name:'陈雯静',
+    email:'935425887@qq.com',
+    phone:'18675601324'
+  },
+
+  //点击拨打电话
+  callPhone(){
+    wx.makePhoneCall({
+      phoneNumber: this.data.phone 
+    })
+  },
+  //点击一键复制
+  copyBtn(e) {
+    var _data = e.currentTarget.dataset.content;
+
+    wx.setClipboardData({
+      //准备复制的数据内容
+      data: _data,
+      success: function (res) {
+        wx.showToast({
+          title: '复制成功',
+        });
+      }
+    });
   },
 
   /**
