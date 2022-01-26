@@ -48,7 +48,10 @@
     font-size: 28rpx;
     color: #000;
     line-height: 28rpx;
-    position: relative
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .KFBtu{
     opacity: 0;
@@ -57,4 +60,10 @@
     height: 3%;
     top: 0;
     left: 0;
+}
+
+.wechat_icon{
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 5rpx;
 }

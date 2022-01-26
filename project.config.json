@@ -41,7 +41,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.19.4",
   "appid": "wx6a8c43bf88bb5bc3",
-  "projectname": "myself",
+  "projectname": "Applet",
   "debugOptions": {
     "hidedInDevtools": []
   },

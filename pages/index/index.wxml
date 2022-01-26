@@ -15,11 +15,18 @@
 		<!-- 联系方式 -->
 		<view class="contact">
 			<view class="contact-item" >
+				<image src='../../assets/icons/wechat_icon.svg' mode='aspectFit' class="wechat_icon"/>
 				<text>在线联系</text>
 				<button type="primary" open-type="contact" class="KFBtu" />
 			</view>
-			<view class="contact-item" bindtap="callPhone">拨打电话</view>
-			<view class="contact-item" data-content='{{email}}' bindtap="copyBtn">复制邮箱</view>
+			<view class="contact-item" bindtap="callPhone">
+				<image src='../../assets/icons/phone.svg' mode='aspectFit' class="wechat_icon"/>
+				<text>拨打电话</text>
+			</view>
+			<view class="contact-item" data-content='{{email}}' bindtap="copyBtn">
+				<image src='../../assets/icons/email.svg' mode='aspectFit' class="wechat_icon"/>
+				<text>复制邮箱</text>
+			</view>
 		</view>
 	</view>
 	<!-- 教育经历 -->
