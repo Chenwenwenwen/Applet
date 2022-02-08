@@ -27,7 +27,13 @@ Page({
       "width":'158rpx',
       "height":'64rpx',
     },
+    buttonImg2:{
+      "src":'https://asset.ibanquan.com/image/6202339d053371001548f423/s.png?v=1644311453',
+      "width":'64rpx',
+      "height":'64rpx',
+    },
     yuque_code:["https://asset.ibanquan.com/image/620227c4cf85760024855cab/s.png?v=1644308420"],
+    blog_code:["https://asset.ibanquan.com/image/62023487053371001548f43d/s.png?v=1644311687"],
   },
 
   //点击拨打电话

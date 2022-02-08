@@ -67,7 +67,8 @@
 			<!-- 个人号不能跳转,才有扫描二维码的方式 -->
 			<!-- <view class="go-button" bindtap="goOther" data-link='{{yuque}}'>语雀</view>
 			<view class="go-button" bindtap="goOther" data-link='{{boke}}'>博客</view> -->
-			<preview-code  img="{{ buttonImg }}" item="{{ yuque_code }}"></preview-code>
+			<preview-code  img="{{ buttonImg }}" item="{{ yuque_code }}" style="margin-right:20rpx"></preview-code>
+			<preview-code  img="{{ buttonImg2 }}" item="{{ blog_code }}"></preview-code>
 		   </view>
 		</view>
 	</view>
