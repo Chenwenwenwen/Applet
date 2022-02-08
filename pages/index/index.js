@@ -17,7 +17,9 @@ Page({
     //个人信息
     name:'陈雯静',
     email:'935425887@qq.com',
-    phone:'18675601324'
+    phone:'18675601324',
+    yuque:'https://www.yuque.com/u1759621?tab=books',
+    boke:'https://chenwenwenwen.github.io/'
   },
 
   //点击拨打电话
@@ -39,6 +41,23 @@ Page({
         });
       }
     });
+  },
+
+  //跳转到文档
+  goOther(e){
+    const detail = e.currentTarget.dataset || e
+    wx.navigateTo({
+      url: `/pages/webView/index?link=${detail.link}`,
+    })
+  },
+   // 点击跳转
+   btnClick(e){
+    const detail = e.currentTarget.dataset || e
+    if(detail.linktype === "navigateTo"){
+      wx.navigateTo({
+        url: detail.link,
+      })
+    }
   },
 
   /**

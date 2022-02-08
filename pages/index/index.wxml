@@ -31,11 +31,47 @@
 	</view>
 	<!-- 教育经历 -->
 	<view class="index-block">
-		<view class="userName">教育经历</view>
+		<view class="title-block">
+			<image src='../../assets/icons/title_icon1.svg' mode='aspectFit' class="title_icon"/>
+        	<view class="liner"></view>
+			<view class="title-item">
+				<view class="titleName">教育经历</view>
+			</view>
+    	</view>
+		<view class="contact-left">
+		   <view class="item"><image src='../../assets/icons/time.svg' mode='aspectFit' class="wechat_icon"/>2016-09 ~ 2020-07</view>
+		   <view class="item"><image src='../../assets/icons/school.svg' mode='aspectFit' class="wechat_icon"/>北京师范大学珠海分校-软件工程</view>
+		   <view class="item"><image src='../../assets/icons/jiaoyu.svg' mode='aspectFit' class="wechat_icon"/>本科</view>
+		</view>
+	</view>
+	<!-- 专业技能 -->
+	<view class="index-block">
+		<view class="title-block">
+			<image src='../../assets/icons/title_icon2.svg' mode='aspectFit' class="title_icon"/>
+        	<view class="liner"></view>
+			<view class="title-item">
+				<view class="titleName">专业技能</view>
+			</view>
+    	</view>
+		<view class="contact-left">
+		   <view class="item">◉ 熟练使用HTML5, CSS/SASS布局，进行前端页面制作,能高效还原设计图</view>
+ 		   <view class="item">◉ 熟练掌握JavaScript，jQuery，ES6，Vue</view>
+		   <view class="item">◉ 熟练使用Ajax，能与后端合作完成研发工作</view>
+		   <view class="item">◉ 熟练使用git工具管理项目，利用gitlab进行团队协作开发</view>
+		   <view class="item">◉ 有用vue开发项目、微信原生小程序页面开发、组件库编写的经验</view>
+		   <view class="item">◉ 较强的责任心和团队精神，具有一定的文档编写能力，良好的编程习惯，代码整洁</view>
+		   <view class="item">◉ 有自己记录的学习文档</view>
+		   <!-- 文档button -->
+		   <view class="buttons">
+			<image src='../../assets/icons/button.svg' mode='aspectFit' class="button_icon"/>
+			<view class="go-button" bindtap="goOther" data-link='{{yuque}}'>语雀</view>
+			<view class="go-button" bindtap="goOther" data-link='{{boke}}'>博客</view>
+		   </view>
+		</view>
 	</view>
 </view>
 </ui-scroll-view>
 
 
 
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

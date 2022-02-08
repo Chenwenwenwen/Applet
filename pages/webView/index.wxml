@@ -1,0 +1,4 @@
+<!--pages/webView/index.wxml-->
+<ui-scroll-view cutHeight="{{ isIpx ? 0 : 96 }}">
+  <web-view src="{{ url }}" wx:if="{{url}}"/>
+</ui-scroll-view>
