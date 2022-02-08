@@ -19,7 +19,15 @@ Page({
     email:'935425887@qq.com',
     phone:'18675601324',
     yuque:'https://www.yuque.com/u1759621?tab=books',
-    boke:'https://chenwenwenwen.github.io/'
+    boke:'https://chenwenwenwen.github.io/',
+
+    // 图片地址
+    buttonImg:{
+      "src":'https://asset.ibanquan.com/image/6202294b053371002448f2e6/s.png?v=1644308811',
+      "width":'158rpx',
+      "height":'64rpx',
+    },
+    yuque_code:["https://asset.ibanquan.com/image/620227c4cf85760024855cab/s.png?v=1644308420"],
   },
 
   //点击拨打电话

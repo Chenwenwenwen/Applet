@@ -2,7 +2,7 @@
 	<view slot="center">{{title}}</view>
 </nav-bar>
 
-<ui-scroll-view class="index" bindscroll="onScroll" id='scroll-view'>
+<ui-scroll-view class="index" id='scroll-view'>
 <view class="content-container">
 	<!-- 个人信息 模块 -->
 	<view class="index-block">
@@ -64,8 +64,10 @@
 		   <!-- 文档button -->
 		   <view class="buttons">
 			<image src='../../assets/icons/button.svg' mode='aspectFit' class="button_icon"/>
-			<view class="go-button" bindtap="goOther" data-link='{{yuque}}'>语雀</view>
-			<view class="go-button" bindtap="goOther" data-link='{{boke}}'>博客</view>
+			<!-- 个人号不能跳转,才有扫描二维码的方式 -->
+			<!-- <view class="go-button" bindtap="goOther" data-link='{{yuque}}'>语雀</view>
+			<view class="go-button" bindtap="goOther" data-link='{{boke}}'>博客</view> -->
+			<preview-code  img="{{ buttonImg }}" item="{{ yuque_code }}"></preview-code>
 		   </view>
 		</view>
 	</view>

@@ -1,0 +1,16 @@
+/* 企业微信预览 */
+/* .previewimg{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 36rpx;
+}
+.previewBanner{
+  width: 300rpx;
+  height: 240rpx;
+  margin-right: 60rpx;
+} */
+.previewCode{
+    width: 244rpx;
+    height: 244rpx;
+}

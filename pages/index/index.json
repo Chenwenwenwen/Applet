@@ -2,6 +2,7 @@
   "component": true,
   "usingComponents": {
     "nav-bar": "../../components/nav-bar/nav-bar",
-    "ui-scroll-view": "../../components/scroll-view/scroll-view"
+    "ui-scroll-view": "../../components/scroll-view/scroll-view",
+    "preview-code": "../../components/preview-code-new/index"
   }
 }
