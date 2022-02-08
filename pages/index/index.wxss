@@ -47,7 +47,7 @@
 }
 .contact-left{
     font-size: 28rpx;
-    color: #000;
+    color: #333;
     line-height: 28rpx;
     text-align: left;
     margin: 40rpx 0 0rpx;
@@ -130,6 +130,39 @@
     width: 50rpx;
     height: 50rpx;
     margin-right: 10rpx;
+}
 
+/* 工作经历 */
+.workTCont{
+    color: #666666;
+}
+.workTime{
+    display: flex;
+    border: 1px solid #3399FF;
+    width: 260rpx;
+    border-radius: 10px;
+    margin: 10rpx 0;
+    font-size: 24rpx;
+    line-height: 24rpx;
+}
+.workType{
+    background: #3399FF;
+    color: #FFF;
+    border-radius: 10px 0 0 10px;
+    padding: 10rpx;
+}
+.workDate{
+    padding: 10rpx;
+}
+.position{
+    margin-left: 20rpx;
+    display: flex;
+    align-items: center;
+    color: #8a8a8a;
+}
+.position_icon{
+    width: 28rpx;
+    height: 28rpx;
+    margin-right: 5rpx;
 }
 

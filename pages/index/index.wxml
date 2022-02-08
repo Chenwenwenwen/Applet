@@ -32,7 +32,7 @@
 	<!-- 教育经历 -->
 	<view class="index-block">
 		<view class="title-block">
-			<image src='../../assets/icons/title_icon1.svg' mode='aspectFit' class="title_icon"/>
+			<image src='./img/title_icon1.svg' mode='aspectFit' class="title_icon"/>
         	<view class="liner"></view>
 			<view class="title-item">
 				<view class="titleName">教育经历</view>
@@ -47,7 +47,7 @@
 	<!-- 专业技能 -->
 	<view class="index-block">
 		<view class="title-block">
-			<image src='../../assets/icons/title_icon2.svg' mode='aspectFit' class="title_icon"/>
+			<image src='./img/title_icon2.svg' mode='aspectFit' class="title_icon"/>
         	<view class="liner"></view>
 			<view class="title-item">
 				<view class="titleName">专业技能</view>
@@ -70,6 +70,74 @@
 			<preview-code  img="{{ buttonImg }}" item="{{ yuque_code }}" style="margin-right:20rpx"></preview-code>
 			<preview-code  img="{{ buttonImg2 }}" item="{{ blog_code }}"></preview-code>
 		   </view>
+		</view>
+	</view>
+	<!-- 工作经验 -->
+	<view class="index-block">
+		<view class="title-block">
+			<image src='./img/title_icon3.svg' mode='aspectFit' class="title_icon"/>
+			<view class="liner"></view>
+			<view class="title-item">
+				<view class="titleName">工作经验</view>
+			</view>
+		</view>
+		<!-- 友好速搭 -->
+		<view class="work-block">
+			<view class="contact-left">
+				<view class=" workTitle item"><image src='../../assets/icons/company.svg' mode='aspectFit' class="wechat_icon"/>亿众骏达网络科技有限公司</view>
+				<view style="display:flex;align-items: center;">
+					<view class="workTime">
+						<view class="workType">工作</view>
+						<view class="workDate">2020-05 ~ 至今</view>
+					</view>
+					<view class="position"><image src='../../assets/icons/position.svg' mode='aspectFit' class="position_icon"/>初级前端工程师</view>
+				</view>
+				<view class="item workTCont">
+					入职前期主要是使用haml维护友好速达官网和活动内容更新，以及已有项目的BUG修改，和完成电商品牌定制页面开发、更新、维护等，现主要处理公司代理的小程序维护更新，数据均从公司SaaS后台获取。
+				</view>
+			</view>
+		</view>
+		<!-- 实习 -->
+		<view class="work-block">
+			<view class="contact-left">
+				<view class=" workTitle item"><image src='../../assets/icons/company.svg' mode='aspectFit' class="wechat_icon"/>珠海圈宝科技有限公司</view>
+					<view style="display:flex;align-items: center;">
+					<view class="workTime" style="width:300rpx">
+						<view class="workType">实习</view>
+						<view class="workDate">2019-12 ~ 2020-03</view>
+					</view>
+					<view class="position"><image src='../../assets/icons/position.svg' mode='aspectFit' class="position_icon"/>实习生</view>
+				</view>
+				<view class="item workTCont">
+					学习ruby基础的增删改查，并负责项目“智慧校园“中安全中心模块的前后端
+				</view>
+			</view>
+		</view>
+	</view>
+	<!-- 项目经验 -->
+	<view class="index-block">
+		<view class="title-block">
+			<image src='./img/title_icon4.svg' mode='aspectFit' class="title_icon"/>
+        	<view class="liner"></view>
+			<view class="title-item">
+				<view class="titleName">项目经验</view>
+			</view>
+    	</view>
+		<view class="contact-left">
+		   <view class="item">◉ 熟练使用HTML5, CSS/SASS布局，进行前端页面制作,能高效还原设计图</view>
+		</view>
+	</view>
+	<!-- 小程序项目经验 -->
+	<view class="index-block">
+		<view class="title-block">
+			<image src='./img/title_icon5.svg' mode='aspectFit' class="title_icon"/>
+        	<view class="liner"></view>
+			<view class="title-item">
+				<view class="titleName">小程序项目经验</view>
+			</view>
+    	</view>
+		<view class="contact-left">
+		   <view class="item">◉ 熟练使用HTML5, CSS/SASS布局，进行前端页面制作,能高效还原设计图</view>
 		</view>
 	</view>
 </view>
