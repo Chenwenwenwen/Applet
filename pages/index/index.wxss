@@ -166,10 +166,28 @@
     margin-right: 5rpx;
 }
 /* 项目经验 */
+
+/* 小程序 */
 .tips{
     color: #3399FF;
     font-size: 25rpx;
-    padding: 5rpx 0;
+    padding: 5rpx 0 20rpx 0;
     line-height: 20px;
     text-align: center;
+}
+.app-block{
+    margin: 50rpx 0;
+}
+
+.app-title{
+    display: inline;
+    background: #EA0029;
+    width: 100%;
+    color: #FFF;
+    padding: 10rpx;
+    border-radius: 10rpx;
+}
+.workTitle{
+    font-size: 24rpx;
+    margin-top: 10rpx;
 }

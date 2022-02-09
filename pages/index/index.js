@@ -34,6 +34,11 @@ Page({
     },
     yuque_code:["https://asset.ibanquan.com/image/620227c4cf85760024855cab/s.png?v=1644308420"],
     blog_code:["https://asset.ibanquan.com/image/62023487053371001548f43d/s.png?v=1644311687"],
+
+    // 小程序信息
+    tryFunID:'wx339755569a8a2929', //春风ID
+    JWA:'wx94ed84f0c32b4f88',//JWA ID
+    FCW:'wx0b762514116de662',//fcw ID
   },
 
   //点击拨打电话
@@ -64,14 +69,32 @@ Page({
       url: `/pages/webView/index?link=${detail.link}`,
     })
   },
-   // 点击跳转
-   btnClick(e){
+
+  // 点击跳转
+  btnClick(e){
     const detail = e.currentTarget.dataset || e
     if(detail.linktype === "navigateTo"){
       wx.navigateTo({
         url: detail.link,
       })
     }
+  },
+
+  goApp(e){
+    const detail = e.currentTarget.dataset || e
+    const _appId = detail.appid
+    const _path = detail.path
+    console.log("_appID",_appId,_path)
+    wx.navigateToMiniProgram({
+      appId:  _appId,  //appid
+      path: _path,//path
+      extraData: {},//参数
+      envVersion: 'develop', //开发版develop 开发版 trial   体验版 release 正式版 
+      success(res) {
+        console.log('成功')
+        // 打开成功
+      }
+    })
   },
 
   /**
