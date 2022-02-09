@@ -179,7 +179,7 @@
 				<view class="item workTCont">- 用ClipboardJS实现用户可以通过点击按钮复制链接</view>
 			</view>
 			<view class="app-block">
-				<view data-appid='{{FCW}}' data-path='/pages/index/index' bindtap="goApp" class="app-title" style=" background: #4a3113;">
+				<view  class="app-title" style=" background: #4a3113;">
 					美大行自行车网页定制
 				</view>
 				<view class="item" class="workTitle item">项目职责：</view>
@@ -190,7 +190,7 @@
 				<view class="item workTCont">- 利用百度地图实现地图信息，默认显示IP所在地。</view>
 			</view>
 			<view class="app-block">
-				<view data-appid='{{tryFunID}}' data-path='/pages/index/index' bindtap="goApp" class="app-title">
+				<view class="app-title">
 					姓名匹配
 				</view>
 				<view class="item" class="workTitle item">项目职责：</view>
