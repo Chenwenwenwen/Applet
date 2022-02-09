@@ -124,7 +124,7 @@
 			</view>
     	</view>
 		<view class="contact-left">
-		   <view class="item">◉ 熟练使用HTML5, CSS/SASS布局，进行前端页面制作,能高效还原设计图</view>
+		  
 		</view>
 	</view>
 	<!-- 小程序项目经验 -->
@@ -136,8 +136,10 @@
 				<view class="titleName">小程序项目经验</view>
 			</view>
     	</view>
+	
 		<view class="contact-left">
-		   <view class="item">◉ 熟练使用HTML5, CSS/SASS布局，进行前端页面制作,能高效还原设计图</view>
+			<view class="tips">点击项目名称可以查看项目/项目详情</view>
+		  	<view class="item">◉ 熟练使用HTML5, CSS/SASS布局，进行前端页面制作,能高效还原设计图</view>
 		</view>
 	</view>
 </view>

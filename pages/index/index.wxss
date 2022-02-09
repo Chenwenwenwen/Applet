@@ -165,4 +165,11 @@
     height: 28rpx;
     margin-right: 5rpx;
 }
-
+/* 项目经验 */
+.tips{
+    color: #3399FF;
+    font-size: 25rpx;
+    padding: 5rpx 0;
+    line-height: 20px;
+    text-align: center;
+}
