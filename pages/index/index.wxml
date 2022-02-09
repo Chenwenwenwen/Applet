@@ -9,7 +9,7 @@
 		<view class="userImage">
 			<image src="./img/useImage.jpg"/>
 		</view>
-		<view class="userName">name</view>
+		<view class="userName">{{name}}</view>
 		<view class="message-item">期望职位 : <text style="color:#BF7E00">前端开发</text></view>
 		<view class="message-item">全职 月内到岗 一年半经验</view>
 		<!-- 联系方式 -->
@@ -98,7 +98,7 @@
 			</view>
 		</view>
 		<!-- 实习 -->
-		<view class="work-block">
+		<view class="work-block" style="margin-top:-60rpx;">
 			<view class="contact-left">
 				<view class=" workTitle item"><image src='../../assets/icons/company.svg' mode='aspectFit' class="wechat_icon"/>珠海圈宝科技有限公司</view>
 					<view style="display:flex;align-items: center;">
@@ -112,19 +112,6 @@
 					学习ruby基础的增删改查，并负责项目“智慧校园“中安全中心模块的前后端
 				</view>
 			</view>
-		</view>
-	</view>
-	<!-- 项目经验 -->
-	<view class="index-block">
-		<view class="title-block">
-			<image src='./img/title_icon4.svg' mode='aspectFit' class="title_icon"/>
-        	<view class="liner"></view>
-			<view class="title-item">
-				<view class="titleName">项目经验</view>
-			</view>
-    	</view>
-		<view class="contact-left">
-		  
 		</view>
 	</view>
 	<!-- 小程序项目经验 -->
@@ -157,8 +144,7 @@
 				<view class="item workTCont">- 使用原生小程序开发页面，高度完成设计稿</view>
 				<view class="item workTCont">- 联合后端接口，实现小程序活动订阅消息功能</view>
 				<view class="item workTCont">- 通过封装自定义tabBar组件，实现在非tabBar页中可以显示tabBar</view>
-				<view class="item workTCont">- 使用promise封装原生wx的API,通过ES7的async/await解决回调地狱，提高代码可读性
-</view>
+				<view class="item workTCont">- 使用promise封装原生wx的API,通过ES7的async/await解决回调地狱，提高代码可读性</view>
 			</view>
 			<view class="app-block">
 				<view data-appid='{{tryFunID}}' data-path='/pages/index/index' bindtap="goApp" class="app-title">
@@ -168,6 +154,51 @@
 				<view class="item workTCont">- 使用原生小程序开发页面，高度完成设计稿</view>
 				<view class="item workTCont">- 通过小程序自带统计事件和WE分析进行埋点统计</view>
 				<view class="item workTCont">- 多方式实现点击图片长按扫码</view>
+			</view>
+		</view>
+	</view>
+	<!-- 项目经验 -->
+	<view class="index-block">
+		<view class="title-block">
+			<image src='./img/title_icon4.svg' mode='aspectFit' class="title_icon"/>
+        	<view class="liner"></view>
+			<view class="title-item">
+				<view class="titleName">项目经验</view>
+			</view>
+    	</view>
+			<view class="contact-left">
+			<view class="app-block">
+				<view  class="app-title" style=" background: #000;">
+					金利来数据分析后台
+				</view>
+				<view class="item" class="workTitle item">项目职责：</view>
+				<view class="item workTCont">后台数据查看系统，登录系统后可以查看金利来电商数据资料并对数据可以进行增删查改</view>
+				<view class="item workTCont">整体框架：vue+elementUI+API</view>
+				<view class="item workTCont">- 用echarts实现图表显示，对接后台获取数据，并显示在图表上</view>
+				<view class="item workTCont">- 导出表单：通过获取筛选栏的信息，后台返回相信的下载网址，并在线下载文件</view>
+				<view class="item workTCont">- 用ClipboardJS实现用户可以通过点击按钮复制链接</view>
+			</view>
+			<view class="app-block">
+				<view data-appid='{{FCW}}' data-path='/pages/index/index' bindtap="goApp" class="app-title" style=" background: #4a3113;">
+					美大行自行车网页定制
+				</view>
+				<view class="item" class="workTitle item">项目职责：</view>
+				<view class="item workTCont">通过浏览网站，客户可以了解美大行公司以及公司产品 </view>
+				<view class="item workTCont">- 利用HTML、JS、CSS3书写前端功能，像素级还原设计稿。</view>
+				<view class="item workTCont">- 利用flex设置弹性项目，根据鼠标的hover增大或者缩小其弹性容器中可用的空间。</view>
+				<view class="item workTCont">- 用JQ实现侧边栏手风琴三级导航菜单。</view>
+				<view class="item workTCont">- 利用百度地图实现地图信息，默认显示IP所在地。</view>
+			</view>
+			<view class="app-block">
+				<view data-appid='{{tryFunID}}' data-path='/pages/index/index' bindtap="goApp" class="app-title">
+					姓名匹配
+				</view>
+				<view class="item" class="workTitle item">项目职责：</view>
+				<view class="item workTCont">通过输入两个人的姓名，对两个人的恋爱匹配度进行分析，显示分析结果，并可以对结果进行图片保存或者分享给好友</view>
+				<view class="item workTCont">- 利用VUE书写前端功能，像素级还原设计稿，实现H5页面</view>
+				<view class="item workTCont">- 通过随机数来读取数组内容，任意组合实现随机结果</view>
+				<view class="item workTCont">- 利用html2canvas读取网页上的目标DOM节点的信息来绘制canvas，把canvas转换成base64图片，通过存图的方式存储页面</view>
+				<view class="item workTCont">- 通过axios请求从后台获取权限验证信息，调用微信官方的JSSDK，通过config接口注入进行配置实现微信分享</view>
 			</view>
 		</view>
 	</view>

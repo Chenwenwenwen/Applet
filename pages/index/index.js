@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    title: '首页',
+    title: '个人简历',
     // 页面高度调整相关-start
     checkIpx: true,
     isIpx: app.globalData.isIpx,
