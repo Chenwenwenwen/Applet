@@ -38,7 +38,7 @@ Page({
     // 小程序信息
     tryFunID:'wx339755569a8a2929', //春风ID
     JWA:'wx94ed84f0c32b4f88',//JWA ID
-    FCW:'wx0b762514116de662',//fcw ID
+    FCW:'wx0b762514116de662',//fcw ID wx9b805bac8adb92c2
   },
 
   //点击拨打电话
@@ -89,7 +89,7 @@ Page({
       appId:  _appId,  //appid
       path: _path,//path
       extraData: {},//参数
-      envVersion: 'develop', //开发版develop 开发版 trial   体验版 release 正式版 
+      envVersion: 'release', //开发版develop 体验版 trial  正式版 release
       success(res) {
         console.log('成功')
         // 打开成功

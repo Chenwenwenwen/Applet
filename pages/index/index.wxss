@@ -8,6 +8,10 @@
     font-size: 0;
     padding: 30rpx 0;
 }
+.display-block{
+    display: flex;
+    align-items: center;
+}
 /* 模块 */
 .index-block{
     margin: 0 30rpx 30rpx 30rpx;
@@ -190,4 +194,9 @@
 .workTitle{
     font-size: 24rpx;
     margin-top: 10rpx;
+}
+.look_icon{
+    width: 30rpx;
+    height: 30rpx;
+    margin-left: 20rpx;
 }

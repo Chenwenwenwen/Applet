@@ -134,7 +134,10 @@
 				<view class="item workTCont">- 使用原生小程序开发页面，高度完成设计稿</view>
 				<view class="item workTCont">- 在app.js获取设备信息，对iPhoneX/12进行底部安全区域适配处理</view>
 				<view class="item workTCont">- 实现腾讯有数数据服务接口对接</view>
-				<view class="item workTCont">- 利用canvas实现贴图保存的相机玩法功能</view>
+				<view class="display-block">
+					<view class="item workTCont">- 利用canvas实现贴图保存的相机玩法功能</view>
+					<image src='../../assets/icons/look.svg' mode='aspectFit' class="look_icon" data-appid='{{JWA}}' data-path='/pages/activity_photo/index' bindtap="goApp"/>
+				</view>
 			</view>
 			<view class="app-block">
 				<view data-appid='{{FCW}}' data-path='/pages/index/index' bindtap="goApp" class="app-title" style=" background: #4a3113;">
