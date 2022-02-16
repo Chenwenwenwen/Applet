@@ -205,6 +205,13 @@
 			</view>
 		</view>
 	</view>
+
+	<!-- 下载png版 -->
+    <view class="downBtn">
+      <button bindtap="downFile">
+		  下载PNG版简历
+	 </button>
+    </view>
 </view>
 </ui-scroll-view>
 

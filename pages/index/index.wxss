@@ -200,3 +200,18 @@
     height: 30rpx;
     margin-left: 20rpx;
 }
+
+/* 下载 */
+.downBtn{
+    margin: 50rpx 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.downBtn button{
+    background-color: black;
+    color: #fff;
+    width: 90%;
+    font-size: 30rpx;
+    font-weight: 400;
+}

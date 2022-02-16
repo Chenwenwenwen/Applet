@@ -39,6 +39,8 @@ Page({
     tryFunID:'wx339755569a8a2929', //春风ID
     JWA:'wx94ed84f0c32b4f88',//JWA ID
     FCW:'wx0b762514116de662',//fcw ID wx9b805bac8adb92c2
+
+    png_url:'https://asset.ibanquan.com/file/620c9892cf85760024858e32',//png版简历
   },
 
   //点击拨打电话
@@ -80,6 +82,7 @@ Page({
     }
   },
 
+  //点击跳转APP
   goApp(e){
     const detail = e.currentTarget.dataset || e
     const _appId = detail.appid
@@ -95,6 +98,53 @@ Page({
         // 打开成功
       }
     })
+  },
+   //下载文件
+   downFile(){
+    let that = this;
+    const fileExtName = ".pdf";
+    const randfile = new Date().getTime() + fileExtName;
+    const newPath = `${wx.env.USER_DATA_PATH}/${randfile}`;
+    console.log("that.data.png_url",that.data.png_url)
+    that.deletContract();
+    wx.downloadFile({
+      url: that.data.png_url,
+      filePath: newPath,
+      success: function (res) {
+        const filePath = res.tempFilePath;
+ 		 wx.openDocument({
+          filePath: newPath,
+          showMenu: true,
+          fileType: 'pdf',
+          success: function (res) {}
+        })
+      },
+      fail: function (res) {
+        wx.hideLoading();
+      }
+    })
+  },
+   // 删除本地文件
+   deletContract() {
+    try {
+      let file = wx.getFileSystemManager();
+      file.readdir({
+        dirPath: `${wx.env.USER_DATA_PATH}`,
+        success: res => {
+          console.log(res);
+          if (res.files.length > 2) {
+            file.unlink({
+              filePath: `${wx.env.USER_DATA_PATH}/${res.files[0]}`,
+              complete: res => {
+
+              }
+            })
+          }
+        }
+      })
+    } catch (error) {
+
+    }
   },
 
   /**
@@ -149,7 +199,13 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
-  }
-})
+    onShareAppMessage: function () {
+      const path = 'pages/collection_list/collection_list'
+      const oData = {
+          title: '陈雯静-个人简历',
+          path: path ,
+          imageUrl: 'https://asset.ibanquan.com/image/6204e10405337100244905fe/s.jpeg?v=1644486916'
+        }
+      return oData
+    }
+  })
